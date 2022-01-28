@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89257FAD2759814700202160 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89257FAC2759814700202160 /* LocationFetcher.swift */; };
 		897F4ABD2746DE74002BD15B /* RememberMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F4ABC2746DE74002BD15B /* RememberMeApp.swift */; };
 		897F4ABF2746DE74002BD15B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F4ABE2746DE74002BD15B /* ContentView.swift */; };
 		897F4AC12746DE76002BD15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897F4AC02746DE76002BD15B /* Assets.xcassets */; };
 		897F4AC42746DE76002BD15B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897F4AC32746DE76002BD15B /* Preview Assets.xcassets */; };
+		897F4ACB2746E74A002BD15B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F4ACA2746E74A002BD15B /* Person.swift */; };
+		897F4ACD2746E781002BD15B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F4ACC2746E781002BD15B /* ImagePicker.swift */; };
+		897F4ACF2746ECBE002BD15B /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F4ACE2746ECBE002BD15B /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89257FAC2759814700202160 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		895D9BD0277BE42300DB7CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		897F4AB92746DE74002BD15B /* RememberMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897F4ABC2746DE74002BD15B /* RememberMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberMeApp.swift; sourceTree = "<group>"; };
 		897F4ABE2746DE74002BD15B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		897F4AC02746DE76002BD15B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897F4AC32746DE76002BD15B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		897F4ACA2746E74A002BD15B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		897F4ACC2746E781002BD15B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		897F4ACE2746ECBE002BD15B /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		897F4ABB2746DE74002BD15B /* RememberMe */ = {
 			isa = PBXGroup;
 			children = (
+				895D9BD0277BE42300DB7CE5 /* Info.plist */,
 				897F4ABC2746DE74002BD15B /* RememberMeApp.swift */,
 				897F4ABE2746DE74002BD15B /* ContentView.swift */,
+				89257FAC2759814700202160 /* LocationFetcher.swift */,
+				897F4ACE2746ECBE002BD15B /* PersonView.swift */,
+				897F4ACA2746E74A002BD15B /* Person.swift */,
+				897F4ACC2746E781002BD15B /* ImagePicker.swift */,
 				897F4AC02746DE76002BD15B /* Assets.xcassets */,
 				897F4AC22746DE76002BD15B /* Preview Content */,
 			);
@@ -137,6 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897F4ACF2746ECBE002BD15B /* PersonView.swift in Sources */,
+				897F4ACD2746E781002BD15B /* ImagePicker.swift in Sources */,
+				89257FAD2759814700202160 /* LocationFetcher.swift in Sources */,
+				897F4ACB2746E74A002BD15B /* Person.swift in Sources */,
 				897F4ABF2746DE74002BD15B /* ContentView.swift in Sources */,
 				897F4ABD2746DE74002BD15B /* RememberMeApp.swift in Sources */,
 			);
@@ -272,6 +290,9 @@
 				DEVELOPMENT_TEAM = W3BZ66Q856;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RememberMe/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We'd like to mark locations of your photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +322,9 @@
 				DEVELOPMENT_TEAM = W3BZ66Q856;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RememberMe/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We'd like to mark locations of your photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
